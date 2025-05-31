@@ -1,0 +1,43 @@
+# .gitignore for K-Nearest Neighbors ML Project
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment directories
+.venv/
+venv/
+env/
+
+# VSCode settings (optional, if using VSCode)
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# Environment variables and secrets (if any)
+.env
+.env.*
+
+# Miscellaneous
+*.bak
+*.swp 

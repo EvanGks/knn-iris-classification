@@ -1,0 +1,19 @@
+# requirements.txt - Python dependencies for the K-Nearest Neighbors ML project
+#
+# Each package below is required for running the notebook and reproducing the results.
+# Install with: pip install -r requirements.txt
+
+# Fundamental package for numerical computations
+numpy
+
+# Data manipulation and analysis
+pandas
+
+# Plotting and data visualization
+matplotlib
+
+# Statistical data visualization (built on matplotlib)
+seaborn
+
+# Machine learning algorithms and tools
+scikit-learn
