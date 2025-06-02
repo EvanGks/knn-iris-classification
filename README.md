@@ -5,11 +5,15 @@
 [![seaborn](https://img.shields.io/badge/seaborn-0.11%2B-4c8cbf?logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-blue.svg)](https://www.kaggle.com/code/evangelosgakias/k-nearest-neighbors-iris-dataset)
+[![Reproducible Research](https://img.shields.io/badge/Reproducible-Yes-brightgreen.svg)](https://www.kaggle.com/code/evangelosgakias/k-nearest-neighbors-iris-dataset)
 
 ---
 
 ## 🚀 Live Results
-You can view and run the notebook locally for full reproducibility. All metrics, plots, and outputs are available in the notebook for transparency and learning.
+You can view the notebook with all outputs and results on Kaggle: [https://www.kaggle.com/code/evangelosgakias/k-nearest-neighbors-iris-dataset](https://www.kaggle.com/code/evangelosgakias/k-nearest-neighbors-iris-dataset)
+
+All metrics, plots, and outputs are available in the linked Kaggle notebook for full transparency and reproducibility.
 
 ---
 
@@ -30,10 +34,10 @@ You can view and run the notebook locally for full reproducibility. All metrics,
 ---
 
 ## 📝 Overview
-This project demonstrates a comprehensive machine learning workflow for classifying iris species using the **K-Nearest Neighbors (KNN)** algorithm. The notebook covers:
+This project presents a comprehensive machine learning workflow for classifying iris species using the **K-Nearest Neighbors (KNN)** algorithm on the classic scikit-learn Iris dataset. The notebook demonstrates:
 - End-to-end data science best practices (EDA, preprocessing, modeling, evaluation, and interpretation)
 - Hyperparameter tuning and model analysis
-- Professional documentation and reproducibility standards
+- Professional documentation, accessibility, and reproducibility standards
 
 **Goal:** Classify iris flowers into one of three species based on four physical features. This project is ideal for those seeking a clear, portfolio-ready example of classification analysis in classic datasets.
 
@@ -75,12 +79,20 @@ K-Nearest Neighbors/
 ---
 
 ## ⚡ Quickstart
-1. **Clone the repository:**
+1. **Kaggle (Recommended for Reproducibility):**
+   - [Run the notebook on Kaggle](https://www.kaggle.com/code/evangelosgakias/k-nearest-neighbors-iris-dataset)
+2. **Local:**
+   - Clone the repo and run `KNN.ipynb` in Jupyter after installing requirements.
+
+---
+
+## 💻 Usage
+1. **📥 Clone the repository:**
    ```bash
    git clone https://github.com/EvanGks/knn-iris-classification.git
    cd knn-iris-classification
    ```
-2. **Create and activate a virtual environment:**
+2. **🔒 Create and activate a virtual environment:**
    - **Windows:**
      ```bash
      python -m venv .venv
@@ -91,26 +103,18 @@ K-Nearest Neighbors/
      python3 -m venv .venv
      source .venv/bin/activate
      ```
-3. **Install dependencies:**
+3. **📦 Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
-4. **Launch Jupyter Notebook:**
+4. **🚀 Launch Jupyter Notebook:**
    ```bash
    jupyter notebook KNN.ipynb
    ```
-5. **Run all cells** to reproduce the analysis and results.
+5. **▶️ Run all cells** to reproduce the analysis and results.
 
-**Troubleshooting:**
+**🛠️ Troubleshooting:**
 - If you encounter missing package errors, ensure your Python environment is activated and up to date.
-
----
-
-## 💻 Usage
-1. Open the Jupyter Notebook (`KNN.ipynb`) using Jupyter Notebook or JupyterLab.
-2. Execute the notebook cells sequentially to follow the entire workflow.
-3. Review the outputs and visualizations for insights into the performance and behavior of the KNN classifier.
-4. Adapt and extend the analysis as necessary for further experimentation or integration into broader projects.
 
 ---
 
@@ -140,7 +144,7 @@ K-Nearest Neighbors/
 ---
 
 ## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, open an issue first to discuss what you would like to change.
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ---
 
