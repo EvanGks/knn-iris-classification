@@ -46,10 +46,13 @@ This project presents a comprehensive machine learning workflow for classifying 
 ## 🏗️ Project Structure
 ```
 K-Nearest Neighbors/
-├── KNN.ipynb        # Jupyter notebook with the complete implementation
-├── README.md        # Project documentation (this file)
-├── requirements.txt # Python dependencies
-├── LICENSE          # MIT License file
+├── KNN.ipynb                  # Jupyter notebook with the complete implementation
+├── README.md                  # Project documentation (this file)
+├── requirements.txt           # Python dependencies
+├── LICENSE                    # MIT License file
+└── figure/                    # Folder containing result images
+    ├── desicion_boundary.png  # Decision boundary plot
+    └── k_value_selection.png  # Accuracy vs. k plot
 ```
 
 ---
@@ -120,15 +123,50 @@ K-Nearest Neighbors/
 
 ## 📊 Results
 ### Model Metrics
-- **Test Accuracy:** Typically > 0.95 (varies by random split)
-- **Precision, Recall, F1-score:** High for all classes (see classification report in notebook)
-- **Confusion Matrix:** Visualizes correct and incorrect predictions
-- **Best Hyperparameters:** Determined via GridSearchCV
+
+| Accuracy   | Precision  | Recall     | F1 Score   |
+|-----------|------------|------------|------------|
+| 0.933333  | 0.944444   | 0.933333   | 0.93266    |
+
+**Classification Report:**
+```
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        10
+           1       0.83      1.00      0.91        10
+           2       1.00      0.80      0.89        10
+
+    accuracy                           0.93        30
+   macro avg       0.94      0.93      0.93        30
+weighted avg       0.94      0.93      0.93        30
+```
+
+**Best parameters found:**
+```
+{'metric': 'euclidean', 'n_neighbors': 5, 'weights': 'uniform'}
+```
+**Best cross-validation accuracy:** 0.9666666666666668
+
+**Test set accuracy of best model:** 0.93
+
+**Classification report for best model:**
+```
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        10
+  versicolor       0.83      1.00      0.91        10
+   virginica       1.00      0.80      0.89        10
+
+    accuracy                           0.93        30
+   macro avg       0.94      0.93      0.93        30
+weighted avg       0.94      0.93      0.93        30
+```
 
 ### Visualizations
-- **Pairplots:** Feature relationships and class separability
-- **Decision Boundary Plot:** Class separation in 2D feature space
-- **Accuracy vs. k Plot:** Shows effect of neighbor count on performance
+- **Decision Boundary Plot:**
+  ![Decision Boundary](figure/desicion_boundary.png)
+- **Accuracy vs. k Plot:**
+  ![Accuracy vs. k](figure/k_value_selection.png)
 
 ---
 
@@ -158,8 +196,8 @@ For questions or feedback, please reach out via:
 - **GitHub:** [EvanGks](https://github.com/EvanGks)
 - **X (Twitter):** [@Evan6471133782](https://x.com/Evan6471133782)
 - **LinkedIn:** [Evangelos Gakias](https://www.linkedin.com/in/evangelos-gakias-346a9072)
+- **Kaggle:** [evangelosgakias](https://www.kaggle.com/evangelosgakias)
 - **Email:** [vgakias_@hotmail.com](mailto:vgakias_@hotmail.com)
-
 ---
 
 Happy Coding! 🚀
